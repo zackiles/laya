@@ -1,0 +1,16 @@
+{
+  "name": "laya-infra",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@pulumi/gcp": "^9.32.1",
+    "@pulumi/pulumi": "^3.229.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "typescript": "^5.9.3"
+  }
+}

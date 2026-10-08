@@ -1,0 +1,8 @@
+config:
+  gcp:project: nesto-platform-ai
+  gcp:region: northamerica-northeast1
+  # Project owners are platform@nesto.ca and ai-architecture@nestocloud.ca (infra).
+  # IAP for the trial is the named users who need the demo, not the owner groups.
+  laya:iapMembers: "user:zachary.iles@nesto.ca,user:louis-david.coulombe@nesto.ca"
+  # laya:image is the Artifact Registry digest. Set it after the image build; the service
+  # is not created until it is set.
