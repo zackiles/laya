@@ -1,0 +1,11 @@
+name: laya
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+description: Laya decision API trial on Cloud Run
+backend:
+  url: gs://nesto-platform-ai-pulumi
+config:
+  gcp:project: nesto-platform-ai
+  gcp:region: northamerica-northeast1
