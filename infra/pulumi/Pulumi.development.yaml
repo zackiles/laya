@@ -2,8 +2,10 @@ config:
   gcp:project: nesto-platform-ai
   gcp:region: northamerica-northeast1
   # Project owners are platform@nesto.ca and ai-architecture@nestocloud.ca (infra).
-  # IAP for the trial is anyone signed in with a nesto.ca or nestocloud.ca Google account.
-  laya:iapMembers: "domain:nesto.ca,domain:nestocloud.ca"
+  # IAP for the trial is anyone signed in with a nesto.ca Google account.
+  # IMPORTANT: do not add domain:nestocloud.ca. IAM accepts it but never returns it on read,
+  # so the provider fails the create with "expected non-nil error with nil state".
+  laya:iapMembers: "domain:nesto.ca"
   # laya:image is the Artifact Registry digest. Set it after the image build; the service
   # is not created until it is set.
 
