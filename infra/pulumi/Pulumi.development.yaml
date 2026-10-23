@@ -6,3 +6,6 @@ config:
   laya:iapMembers: "user:zachary.iles@nesto.ca,user:louis-david.coulombe@nesto.ca"
   # laya:image is the Artifact Registry digest. Set it after the image build; the service
   # is not created until it is set.
+
+  laya:image: northamerica-northeast1-docker.pkg.dev/nesto-platform-ai/laya/laya@sha256:40526065da68ba14a5abdfed8b062cfb094885034aceb03cf7ad43bba8a3b0ca
+encryptionsalt: v1:7qMMSlGj55E=:v1:hlLKvOea8NmrBo03:eghz1gV1CMut4sjZUCdqqIvVNpvp0g==
